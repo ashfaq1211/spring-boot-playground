@@ -1,5 +1,3 @@
 spring:
   application:
     name: spring-boot-playground
-  profiles:
-    active: local
