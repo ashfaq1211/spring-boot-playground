@@ -1,0 +1,12 @@
+services:
+  app:
+    image: spring-boot-playground:local
+    container_name: spring-boot-playground
+    build: .
+#    Enable the two lines below for live/hot reloads
+    volumes:
+      - ./src:/app/src   # Hot-reload: code changes auto-refresh the app
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_PROFILES_ACTIVE: local
