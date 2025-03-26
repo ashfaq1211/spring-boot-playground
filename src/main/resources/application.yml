@@ -1,3 +1,18 @@
 spring:
   application:
     name: spring-boot-playground
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    health:
+      show-details: always
+      probes:
+          enabled: true
+#  health:
+#    db:
+#      enabled: true
+
