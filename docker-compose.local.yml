@@ -4,6 +4,8 @@ services:
     container_name: spring-boot-playground
     build: .
 #    Enable the two lines below for live/hot reloads
+    networks:
+      - local-net
     volumes:
       - ./src:/app/src   # Hot-reload: code changes auto-refresh the app
     ports:
